@@ -1,7 +1,21 @@
+// * State Variables
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
 const input = document.getElementById("link-input");
 const linkForm = document.getElementById("link-form");
 const errMsg = document.getElementById("err-msg");
 
+// * Menu
+menuBtn.addEventListener("click", navToggle);
+
+function navToggle() {
+  menuBtn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
+
+// * Form - Link Validation
 linkForm.addEventListener("submit", formSubmit);
 
 // Validate a URL
