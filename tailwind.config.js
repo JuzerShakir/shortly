@@ -12,6 +12,9 @@ module.exports = {
         veryDarkBlue: "hsl(255, 11%, 22%)",
         veryDarkViolet: "hsl(260, 8%, 14%) ",
       },
+      spacing: {
+        180: "32rem",
+      },
     },
   },
   plugins: [],
