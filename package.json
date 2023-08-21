@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/JuzerShakir/shortly/issues"
   },
-  "homepage": "https://github.com/JuzerShakir/shortly#readme"
+  "homepage": "https://github.com/JuzerShakir/shortly#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }
