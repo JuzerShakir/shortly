@@ -1,0 +1,25 @@
+{
+  "name": "shortly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuzerShakir/shortly.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "grid",
+    "flex",
+    "css3"
+  ],
+  "author": "Juzer Shakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuzerShakir/shortly/issues"
+  },
+  "homepage": "https://github.com/JuzerShakir/shortly#readme"
+}
