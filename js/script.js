@@ -4,7 +4,7 @@ const menu = document.getElementById("menu");
 
 const input = document.getElementById("link-input");
 const linkForm = document.getElementById("link-form");
-const errMsg = document.getElementById("err-msg");
+const valMsg = document.getElementById("val-msg");
 
 // * Menu
 menuBtn.addEventListener("click", navToggle);
@@ -36,13 +36,16 @@ function formSubmit(e) {
   e.preventDefault();
 
   if (input.value === "" || !validURL(input.value)) {
-    errMsg.innerHTML = "Please enter valid URL";
+    valMsg.classList.remove("text-green-700");
+    valMsg.innerHTML = "Please enter valid URL";
+    valMsg.classList.add("text-red");
     input.classList.remove("border-green-900");
     input.classList.add("border-orange-700");
   } else {
-    errMsg.innerHTML = "";
+    valMsg.classList.remove("text-red");
+    valMsg.innerHTML = "Success";
+    valMsg.classList.add("text-green-700");
     input.classList.remove("border-orange-700");
     input.classList.add("border-green-900");
-    alert("Success");
   }
 }
