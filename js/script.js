@@ -35,15 +35,13 @@ function validURL(str) {
 function formSubmit(e) {
   e.preventDefault();
 
-  if (input.value === "") {
-    errMsg.innerHTML = "Please enter something";
-    input.classList.add("border-red-600");
-  } else if (!validURL(input.value)) {
-    errMsg.innerHTML = "Please enter a valid URL";
-    input.classList.add("border-red-600");
+  if (input.value === "" || !validURL(input.value)) {
+    errMsg.innerHTML = "Please enter valid URL";
+    input.classList.remove("border-green-900");
+    input.classList.add("border-orange-700");
   } else {
     errMsg.innerHTML = "";
-    input.classList.remove("border-red-600");
+    input.classList.remove("border-orange-700");
     input.classList.add("border-green-900");
     alert("Success");
   }
